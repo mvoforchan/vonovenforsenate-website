@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mark von Oven for Senate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-name">MARK VON OVEN</span>
+                <span class="logo-tagline">for State Senate</span>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="issues.html">Issues</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#donate" class="nav-donate">Donate</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="page-subtitle">We'd love to hear from you. Get in touch with our campaign team.</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Have a question? Want to get involved? Need to reach the campaign? We're here to help.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">✉️</div>
+                            <div class="method-details">
+                                <h4>Email</h4>
+                                <p><a href="mailto:mark@vonovenforsenate.com">mark@vonovenforsenate.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-details">
+                                <h4>Phone</h4>
+                                <p>(612) XXX-XXXX</p>
+                                <p class="note">Campaign hours: Mon-Fri 9am-5pm</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div class="method-details">
+                                <h4>Mailing Address</h4>
+                                <p>Mark von Oven for Senate<br>
+                                P.O. Box XXXX<br>
+                                Chanhassen, MN 55317</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">👥</div>
+                            <div class="method-details">
+                                <h4>Social Media</h4>
+                                <div class="social-links-list">
+                                    <p><a href="https://facebook.com/vonovenforsenate" target="_blank">Facebook</a></p>
+                                    <p><a href="https://instagram.com/vonovenforsenate" target="_blank">Instagram</a></p>
+                                    <p><a href="https://linkedin.com/in/markvonoven" target="_blank">LinkedIn</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="press-inquiries">
+                        <h3>Press Inquiries</h3>
+                        <p>For media requests and press inquiries, please email:<br>
+                        <a href="mailto:press@vonovenforsenate.com">press@vonovenforsenate.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="zip">ZIP Code</label>
+                            <input type="text" id="zip" name="zip" maxlength="5">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="volunteer">I want to volunteer</option>
+                                <option value="event">Event information</option>
+                                <option value="issue">Policy question or concern</option>
+                                <option value="endorsement">Endorsement inquiry</option>
+                                <option value="media">Media inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-links-section">
+        <div class="container">
+            <h2>Looking for Something Specific?</h2>
+            <div class="quick-links-grid">
+                <a href="get-involved.html" class="quick-link-card">
+                    <div class="quick-icon">🤝</div>
+                    <h3>Volunteer</h3>
+                    <p>Join our team and help bring common sense leadership to St. Paul</p>
+                </a>
+                <a href="#donate" class="quick-link-card">
+                    <div class="quick-icon">💵</div>
+                    <h3>Donate</h3>
+                    <p>Support the campaign with a contribution</p>
+                </a>
+                <a href="events.html" class="quick-link-card">
+                    <div class="quick-icon">📅</div>
+                    <h3>Events</h3>
+                    <p>Find upcoming campaign events in your area</p>
+                </a>
+                <a href="about.html" class="quick-link-card">
+                    <div class="quick-icon">👤</div>
+                    <h3>About Mark</h3>
+                    <p>Learn more about Mark's background and experience</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-name">MARK VON OVEN</span>
+                        <span class="logo-tagline">for State Senate • District 48</span>
+                    </div>
+                    <p class="footer-tagline">Common Sense Leadership That Brings Us Together</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Campaign</h4>
+                        <ul>
+                            <li><a href="about.html">About Mark</a></li>
+                            <li><a href="issues.html">Issues</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="endorsements.html">Endorsements</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Get Involved</h4>
+                        <ul>
+                            <li><a href="get-involved.html">Volunteer</a></li>
+                            <li><a href="#donate">Donate</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul class="social-links">
+                            <li><a href="https://facebook.com/vonovenforsenate" target="_blank">Facebook</a></li>
+                            <li><a href="https://instagram.com/vonovenforsenate" target="_blank">Instagram</a></li>
+                            <li><a href="https://linkedin.com/in/markvonoven" target="_blank">LinkedIn</a></li>
+                        </ul>
+                        <div class="footer-contact">
+                            <p><a href="mailto:mark@vonovenforsenate.com">mark@vonovenforsenate.com</a></p>
+                            <p>(612) XXX-XXXX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="disclaimer">Paid for by Mark von Oven for Senate</p>
+                <p class="footer-copyright">&copy; 2026 Mark von Oven for Senate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
