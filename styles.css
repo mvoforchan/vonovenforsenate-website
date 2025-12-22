@@ -277,6 +277,14 @@ a:hover {
     animation: fadeIn 1s ease-out 0.6s backwards;
 }
 
+.hero-photo {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -822,6 +830,14 @@ section h2::after {
 .about-image .image-placeholder.large {
     aspect-ratio: 3/4;
     max-width: 400px;
+}
+
+.about-photo {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(26, 47, 75, 0.15);
+    display: block;
 }
 
 .about-text .lead {
