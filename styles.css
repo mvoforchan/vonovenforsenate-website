@@ -640,6 +640,21 @@ section h2::after {
     border-color: var(--teal);
 }
 
+/* Video Container in Sidebar */
+.video-container {
+    width: 100%;
+    margin-bottom: var(--spacing-sm);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* Footer */
 .main-footer {
     background: var(--navy);
