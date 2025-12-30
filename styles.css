@@ -640,7 +640,7 @@ section h2::after {
     border-color: var(--teal);
 }
 
-/* Video Container in Sidebar */
+/* Video Container in Sidebar - YouTube Embed */
 .video-container {
     width: 100%;
     margin-bottom: var(--spacing-sm);
@@ -653,6 +653,32 @@ section h2::after {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.video-container iframe {
+    width: 100%;
+    display: block;
+    border: none;
+}
+
+/* Responsive video - maintains aspect ratio */
+@media (max-width: 968px) {
+    .video-container iframe {
+        height: 250px;
+    }
+}
+
+/* Family Photo Styles */
+.family-photo {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: var(--spacing-sm);
+    display: block;
+    box-shadow: 0 5px 20px rgba(26, 47, 75, 0.08);
+}
+
+.sidebar-card img.family-photo {
+    margin-bottom: var(--spacing-sm);
 }
 
 /* Footer */
