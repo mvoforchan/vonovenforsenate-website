@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved - Mark von Oven for Senate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-name">MARK VON OVEN</span>
+                <span class="logo-tagline">for State Senate • District 48</span>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="issues.html">Issues</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#donate" class="nav-donate">Donate</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Get Involved</h1>
+            <p class="page-subtitle">Join our campaign and help bring common sense leadership to St. Paul</p>
+        </div>
+    </section>
+
+    <section class="get-involved-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Every Campaign is Built by People Like You</h2>
+                <p class="lead">Winning elections isn't about big money or political insiders—it's about neighbors talking to neighbors, volunteers knocking on doors, and people who believe in common sense leadership stepping up to help.</p>
+                <p>Whether you have 2 hours a week or 20, there's a way for you to make a difference. Fill out the form below and we'll be in touch with next steps!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="volunteer-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2>Sign Up to Volunteer</h2>
+                <p class="form-intro">Tell us a little about yourself and how you'd like to help. We'll follow up within 48 hours.</p>
+                
+                <form id="volunteerForm" class="volunteer-form" method="POST">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3>Your Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="zip">ZIP Code *</label>
+                                <input type="text" id="zip" name="zip" maxlength="5" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ways to Help -->
+                    <div class="form-section">
+                        <h3>How Would You Like to Help?</h3>
+                        <p class="help-text">Check all that apply</p>
+                        
+                        <div class="checkbox-grid">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="doorKnocking" value="yes">
+                                <span class="checkbox-label">
+                                    <strong>Door Knocking</strong>
+                                    <small>Talk to voters in your neighborhood</small>
+                                </span>
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="phoneBanking" value="yes">
+                                <span class="checkbox-label">
+                                    <strong>Phone Banking</strong>
+                                    <small>Call voters from home</small>
+                                </span>
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="yardSign" value="yes">
+                                <span class="checkbox-label">
+                                    <strong>Host a Yard Sign</strong>
+                                    <small>Display a sign at your home</small>
+                                </span>
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="houseParty" value="yes">
+                                <span class="checkbox-label">
+                                    <strong>Host a House Party</strong>
+                                    <small>Gather neighbors to meet Mark</small>
+                                </span>
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="dataEntry" value="yes">
+                                <span class="checkbox-label">
+                                    <strong>Data Entry</strong>
+                                    <small>Help with campaign administration</small>
+                                </span>
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="eventHelp" value="yes">
+                                <span class="checkbox-label">
+                                    <strong>Event Support</strong>
+                                    <small>Help set up and staff events</small>
+                                </span>
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="socialMedia" value="yes">
+                                <span class="checkbox-label">
+                                    <strong>Social Media</strong>
+                                    <small>Share posts and spread the word online</small>
+                                </span>
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="writing" value="yes">
+                                <span class="checkbox-label">
+                                    <strong>Writing/Content</strong>
+                                    <small>Letters to editor, blog posts, etc.</small>
+                                </span>
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="fundraising" value="yes">
+                                <span class="checkbox-label">
+                                    <strong>Fundraising</strong>
+                                    <small>Help reach out to potential donors</small>
+                                </span>
+                            </label>
+
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="other" value="yes">
+                                <span class="checkbox-label">
+                                    <strong>Other/Not Sure Yet</strong>
+                                    <small>We'll help you find the right fit</small>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Availability -->
+                    <div class="form-section">
+                        <h3>Your Availability</h3>
+                        <div class="form-group">
+                            <label for="availability">How much time can you commit per week?</label>
+                            <select id="availability" name="availability">
+                                <option value="">Select one...</option>
+                                <option value="1-2 hours">1-2 hours</option>
+                                <option value="3-5 hours">3-5 hours</option>
+                                <option value="6-10 hours">6-10 hours</option>
+                                <option value="10+ hours">10+ hours</option>
+                                <option value="flexible">Flexible - depends on the week</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Skills/Experience -->
+                    <div class="form-section">
+                        <h3>Additional Information (Optional)</h3>
+                        <div class="form-group">
+                            <label for="skills">Do you have any special skills or experience that could help the campaign?</label>
+                            <textarea id="skills" name="skills" rows="3" placeholder="Examples: graphic design, event planning, legal experience, bilingual, etc."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comments">Anything else you'd like us to know?</label>
+                            <textarea id="comments" name="comments" rows="3" placeholder="Questions, ideas, or just let us know why you're getting involved!"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-large">Join the Campaign</button>
+                        <p class="form-disclaimer">We respect your privacy. Your information will only be used for campaign activities and will never be sold or shared.</p>
+                    </div>
+                </form>
+
+                <div id="formSuccess" class="form-success" style="display: none;">
+                    <h3>Thank You for Joining!</h3>
+                    <p>We've received your information and someone from the campaign will be in touch within 48 hours.</p>
+                    <p>In the meantime, follow us on social media and help spread the word!</p>
+                    <div class="social-links-success">
+                        <a href="https://facebook.com/vonovenforsenate" target="_blank" class="btn btn-outline">Facebook</a>
+                        <a href="https://instagram.com/vonovenforsenate" target="_blank" class="btn btn-outline">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="other-ways">
+        <div class="container">
+            <h2>Other Ways to Support</h2>
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon">💵</div>
+                    <h3>Donate</h3>
+                    <p>Fuel our grassroots campaign with a contribution of any amount.</p>
+                    <a href="#donate" class="btn btn-primary">Contribute Now</a>
+                </div>
+
+                <div class="support-card">
+                    <div class="support-icon">📱</div>
+                    <h3>Spread the Word</h3>
+                    <p>Follow us on social media and share with your networks.</p>
+                    <div class="social-buttons">
+                        <a href="https://facebook.com/vonovenforsenate" target="_blank">Facebook</a>
+                        <a href="https://instagram.com/vonovenforsenate" target="_blank">Instagram</a>
+                    </div>
+                </div>
+
+                <div class="support-card">
+                    <div class="support-icon">✍️</div>
+                    <h3>Write a Letter</h3>
+                    <p>Submit a letter to the editor of your local paper.</p>
+                    <a href="contact.html" class="btn btn-outline">Get Talking Points</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-name">MARK VON OVEN</span>
+                        <span class="logo-tagline">for State Senate • District 48</span>
+                    </div>
+                    <p class="footer-tagline">Common Sense Leadership That Brings Us Together</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Campaign</h4>
+                        <ul>
+                            <li><a href="about.html">About Mark</a></li>
+                            <li><a href="issues.html">Issues</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="endorsements.html">Endorsements</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Get Involved</h4>
+                        <ul>
+                            <li><a href="get-involved.html">Volunteer</a></li>
+                            <li><a href="#donate">Donate</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul class="social-links">
+                            <li><a href="https://facebook.com/vonovenforsenate" target="_blank">Facebook</a></li>
+                            <li><a href="https://instagram.com/vonovenforsenate" target="_blank">Instagram</a></li>
+                            <li><a href="https://linkedin.com/in/markvonoven" target="_blank">LinkedIn</a></li>
+                        </ul>
+                        <div class="footer-contact">
+                            <p><a href="mailto:mark@vonovenforsenate.com">mark@vonovenforsenate.com</a></p>
+                            <p>(612) XXX-XXXX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="disclaimer">Paid for by Mark von Oven for Senate</p>
+                <p class="footer-copyright">&copy; 2026 Mark von Oven for Senate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="volunteer-form.js"></script>
+</body>
+</html>
