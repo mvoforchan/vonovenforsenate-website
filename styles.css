@@ -1834,78 +1834,32 @@ section h2::after {
     }
 }
 
-/* Netlify Forms Success Message - Add to styles.css */
+/* Simplified Contact Page - Add to styles.css */
 
-.form-success-message {
-    text-align: center;
-    padding: var(--spacing-xl);
-    background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
-    color: var(--white);
-    border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(32, 178, 170, 0.3);
-}
-
-.success-icon {
-    font-size: 4rem;
-    color: var(--white);
-    margin-bottom: var(--spacing-md);
-    animation: successPop 0.6s ease-out;
-}
-
-@keyframes successPop {
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-.form-success-message h2 {
-    color: var(--white);
-    font-size: 2rem;
-    margin-bottom: var(--spacing-md);
-}
-
-.form-success-message p {
+.contact-form-container .email-cta-text {
     font-size: 1.1rem;
+    color: var(--medium-gray);
     margin-bottom: var(--spacing-md);
-    color: rgba(255, 255, 255, 0.95);
-    line-height: 1.6;
+    text-align: center;
 }
 
-.success-social-links {
-    display: flex;
-    gap: var(--spacing-sm);
-    justify-content: center;
+.email-button {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 1.25rem 2.5rem;
     margin: var(--spacing-md) 0;
+    text-align: center;
 }
 
-.success-social-links .btn {
-    background: var(--white);
-    color: var(--teal);
-    border-color: var(--white);
+.email-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(32, 178, 170, 0.3);
 }
 
-.success-social-links .btn:hover {
-    background: transparent;
-    color: var(--white);
-    border-color: var(--white);
-}
-
-.form-success-message .btn-primary {
-    background: var(--white);
-    color: var(--teal);
-    border-color: var(--white);
-}
-
-.form-success-message .btn-primary:hover {
-    background: var(--navy);
-    color: var(--white);
-    border-color: var(--navy);
+.email-note {
+    font-size: 0.9rem;
+    color: var(--medium-gray);
+    font-style: italic;
+    margin-top: var(--spacing-sm);
+    text-align: center;
 }
