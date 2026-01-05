@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Menu Test - Mark von Oven</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        
+        .test-button {
+            background: #1a2f4b;
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            display: block;
+            margin: 20px 0;
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        .test-button:active {
+            background: #20b2aa;
+        }
+        
+        #output {
+            background: #f0f0f0;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .log-entry {
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+        }
+        
+        .hamburger {
+            width: 40px;
+            height: 40px;
+            background: #1a2f4b;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            transition: all 0.3s;
+        }
+        
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translateY(9px);
+        }
+        
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translateY(-9px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Mobile Menu Diagnostic Test</h1>
+    <p>This page tests if touch events are working on your device.</p>
+    
+    <h2>Test 1: Simple Button</h2>
+    <button class="test-button" id="testButton">Tap This Button</button>
+    
+    <h2>Test 2: Hamburger Menu</h2>
+    <div class="hamburger" id="testHamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <h2>Event Log:</h2>
+    <div id="output"></div>
+    
+    <script>
+        const output = document.getElementById('output');
+        
+        function log(message) {
+            const entry = document.createElement('div');
+            entry.className = 'log-entry';
+            entry.textContent = new Date().toLocaleTimeString() + ': ' + message;
+            output.insertBefore(entry, output.firstChild);
+        }
+        
+        // Test button
+        const testButton = document.getElementById('testButton');
+        
+        testButton.addEventListener('touchstart', function(e) {
+            log('✅ TOUCHSTART detected on button');
+            e.preventDefault();
+        }, { passive: false });
+        
+        testButton.addEventListener('touchend', function() {
+            log('✅ TOUCHEND detected on button');
+        });
+        
+        testButton.addEventListener('click', function() {
+            log('✅ CLICK detected on button');
+        });
+        
+        // Test hamburger
+        const testHamburger = document.getElementById('testHamburger');
+        
+        testHamburger.addEventListener('touchstart', function(e) {
+            log('✅ TOUCHSTART detected on hamburger');
+            testHamburger.classList.toggle('active');
+            e.preventDefault();
+        }, { passive: false });
+        
+        testHamburger.addEventListener('click', function() {
+            log('✅ CLICK detected on hamburger');
+            testHamburger.classList.toggle('active');
+        });
+        
+        // Pointer events (if supported)
+        if ('PointerEvent' in window) {
+            testButton.addEventListener('pointerdown', function(e) {
+                log('✅ POINTERDOWN detected: ' + e.pointerType);
+            });
+        } else {
+            log('❌ Pointer events NOT supported on this device');
+        }
+        
+        // Document loaded
+        log('🚀 Page loaded - Device: ' + navigator.userAgent.split(')')[0].split('(')[1]);
+        log('🚀 Touch support: ' + ('ontouchstart' in window ? 'YES' : 'NO'));
+        log('🚀 Screen width: ' + window.innerWidth + 'px');
+    </script>
+</body>
+</html>
