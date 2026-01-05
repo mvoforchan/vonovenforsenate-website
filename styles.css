@@ -699,6 +699,10 @@ section h2::after {
     margin-bottom: var(--spacing-sm);
 }
 
+.footer-logo .logo-name {
+    color: var(--white);  /* Or var(--teal-light) or var(--orange) */
+}
+
 .footer-tagline {
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.95rem;
@@ -776,6 +780,7 @@ section h2::after {
         flex-direction: column;
         padding: var(--spacing-md);
         box-shadow: 0 10px 30px rgba(26, 47, 75, 0.1);
+        z-index: 999;
     }
     
     .nav-menu.active {
@@ -784,6 +789,9 @@ section h2::after {
     
     .mobile-menu-toggle {
         display: flex;
+        z-index: 1000;
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
     }
     
     .hero-content {

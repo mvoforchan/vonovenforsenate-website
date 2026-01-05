@@ -3,14 +3,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
     
-    if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener('click', function() {
+    if (mobileMenuToggle && navMenu) {
+        // Handle both click and touch events for mobile compatibility
+        const toggleMenu = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
             navMenu.classList.toggle('active');
-            this.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active');
             
             // Animate hamburger
-            const spans = this.querySelectorAll('span');
-            if (this.classList.contains('active')) {
+            const spans = mobileMenuToggle.querySelectorAll('span');
+            if (mobileMenuToggle.classList.contains('active')) {
                 spans[0].style.transform = 'rotate(45deg) translateY(8px)';
                 spans[1].style.opacity = '0';
                 spans[2].style.transform = 'rotate(-45deg) translateY(-8px)';
@@ -19,7 +23,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 spans[1].style.opacity = '1';
                 spans[2].style.transform = 'none';
             }
-        });
+        };
+        
+        // Add both click and touchstart listeners
+        mobileMenuToggle.addEventListener('click', toggleMenu);
+        mobileMenuToggle.addEventListener('touchstart', toggleMenu, { passive: false });
         
         // Close menu when clicking menu items
         const menuLinks = navMenu.querySelectorAll('a');
@@ -32,6 +40,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 spans[1].style.opacity = '1';
                 spans[2].style.transform = 'none';
             });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!navMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+                const spans = mobileMenuToggle.querySelectorAll('span');
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            }
         });
     }
 });
@@ -57,17 +77,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 let lastScroll = 0;
 const nav = document.querySelector('.main-nav');
 
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll <= 0) {
-        nav.style.boxShadow = '0 2px 20px rgba(26, 47, 75, 0.08)';
-    } else {
-        nav.style.boxShadow = '0 2px 20px rgba(26, 47, 75, 0.15)';
-    }
-    
-    lastScroll = currentScroll;
-});
+if (nav) {
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll <= 0) {
+            nav.style.boxShadow = '0 2px 20px rgba(26, 47, 75, 0.08)';
+        } else {
+            nav.style.boxShadow = '0 2px 20px rgba(26, 47, 75, 0.15)';
+        }
+        
+        lastScroll = currentScroll;
+    });
+}
 
 // Form submission placeholder (to be replaced with actual backend)
 const forms = document.querySelectorAll('form');
