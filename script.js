@@ -95,14 +95,14 @@
         // Close menu when clicking menu items
         const menuLinks = navMenu.querySelectorAll('a');
         menuLinks.forEach(function(link) {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function(e) {
                 console.log('Menu link clicked');
-                closeMenu();
+                // Don't close immediately - let navigation happen first
+                setTimeout(function() {
+                    closeMenu();
+                }, 100);
             });
-            link.addEventListener('touchstart', function() {
-                console.log('Menu link touched');
-                closeMenu();
-            });
+            // Remove the touchstart listener entirely - it's interfering
         });
         
         // Close menu when clicking/touching outside
