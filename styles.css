@@ -1871,3 +1871,27 @@ section h2::after {
     margin-top: var(--spacing-sm);
     text-align: center;
 }
+
+/* Contact page mobile overflow fixes */
+@media (max-width: 768px) {
+    .contact-method p,
+    .press-inquiries p,
+    .method-details p {
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .method-details a,
+    .press-inquiries a {
+        word-break: break-all;
+        font-size: 0.9rem;
+    }
+    
+    .contact-grid {
+        overflow-x: hidden;
+    }
+    
+    .container {
+        overflow-x: hidden;
+    }
+}
