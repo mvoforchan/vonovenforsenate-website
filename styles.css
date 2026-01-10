@@ -1891,3 +1891,21 @@ section h2::after {
         overflow-x: hidden;
     }
 }
+
+/* Section Photos */
+.section-photo {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto 2rem auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(26, 47, 75, 0.15);
+}
+
+@media (max-width: 768px) {
+    .section-photo {
+        margin-bottom: 1.5rem;
+        border-radius: 4px;
+    }
+}
