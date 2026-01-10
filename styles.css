@@ -391,7 +391,6 @@ section h2::after {
 
 .why-text .lead {
     font-size: 1.3rem;
-    font-family: var(--font-accent);
     line-height: 1.6;
     color: var(--navy);
     margin-bottom: var(--spacing-md);
@@ -889,7 +888,6 @@ section h2::after {
 
 .about-text .lead {
     font-size: 1.3rem;
-    font-family: var(--font-accent);
     line-height: 1.6;
     color: var(--navy);
     margin-bottom: var(--spacing-md);
@@ -1202,7 +1200,6 @@ section h2::after {
 
 .overview-intro .lead {
     font-size: 1.25rem;
-    font-family: var(--font-accent);
     line-height: 1.7;
     color: var(--navy);
 }
@@ -1578,7 +1575,6 @@ section h2::after {
 
 .intro-content .lead {
     font-size: 1.25rem;
-    font-family: var(--font-accent);
     line-height: 1.7;
     color: var(--navy);
     margin-bottom: var(--spacing-md);
