@@ -1945,7 +1945,12 @@ section h2::after {
         font-size: 0.9rem;
         line-height: 1.4;
         margin-bottom: 0.75rem;
-        padding-left: 0;
+        padding-left: 1.5rem;
+    }
+    
+    .issue-detail-card ul li::before {
+        top: 0.2rem;
+        font-size: 1rem;
     }
     
     /* Make collapsed by default */
