@@ -214,3 +214,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 })();
+
+// Mobile accordion for issues page
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth <= 768) {
+        const issueCards = document.querySelectorAll('.issue-detail-card');
+        issueCards.forEach(function(card) {
+            const header = card.querySelector('.issue-header');
+            if (header) {
+                header.addEventListener('click', function() {
+                    card.classList.toggle('expanded');
+                });
+            }
+        });
+    }
+});

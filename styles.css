@@ -1909,3 +1909,76 @@ section h2::after {
         border-radius: 4px;
     }
 }
+
+/* Mobile issues page improvements */
+@media (max-width: 768px) {
+    /* Make cards more compact */
+    .issue-detail-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* Reduce font sizes */
+    .issue-detail-card h2 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+    
+    .issue-detail-card h3 {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .issue-description {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+    
+    /* Tighten up bullet points */
+    .issue-detail-card ul {
+        margin-top: 0.5rem;
+    }
+    
+    .issue-detail-card ul li {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-bottom: 0.75rem;
+        padding-left: 0;
+    }
+    
+    /* Make collapsed by default */
+    .issue-detail-card .issue-description,
+    .issue-detail-card h3,
+    .issue-detail-card ul {
+        display: none;
+    }
+    
+    .issue-detail-card.expanded .issue-description,
+    .issue-detail-card.expanded h3,
+    .issue-detail-card.expanded ul {
+        display: block;
+    }
+    
+    /* Add tap indicator */
+    .issue-header {
+        cursor: pointer;
+        position: relative;
+        padding-right: 2rem;
+    }
+    
+    .issue-header::after {
+        content: '▼';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        color: var(--teal);
+    }
+    
+    .issue-detail-card.expanded .issue-header::after {
+        content: '▲';
+    }
+}
