@@ -130,6 +130,18 @@ a:hover {
     text-decoration: none;
 }
 
+.logo-image {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+@media (max-width: 968px) {
+    .logo-image {
+        height: 40px;
+    }
+}
+
 .logo-name {
     font-family: var(--font-display);
     font-weight: 800;
@@ -696,6 +708,18 @@ section h2::after {
 
 .footer-logo {
     margin-bottom: var(--spacing-sm);
+}
+
+.footer-logo-image {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .footer-logo-image {
+        height: 50px;
+    }
 }
 
 .footer-logo .logo-name {
