@@ -2094,6 +2094,7 @@ section h2::after {
     display: grid;
     grid-template-columns: 400px 1fr;
     gap: 2rem;
+    scroll-margin-top: 100px;
 }
 
 .event-image {
