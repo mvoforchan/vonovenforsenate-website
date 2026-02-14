@@ -36,38 +36,34 @@
         </div>
     </nav>
 
-    <section class="coming-soon-hero">
-        <div class="container">
-            <div class="coming-soon-content">
-                <div class="coming-soon-icon">🚧</div>
-                <h1>Coming Soon</h1>
-                <p class="coming-soon-text">We're working hard to bring you this content. Check back soon for updates!</p>
-                
-                <div class="coming-soon-actions">
-                    <a href="index.html" class="btn btn-primary">Back to Home</a>
-                    <a href="get-involved.html" class="btn btn-outline">Get Involved</a>
-                </div>
+<section class="page-hero">
+    <div class="container">
+        <h1>News & Media</h1>
+        <p class="page-subtitle">Latest news coverage and campaign updates</p>
+    </div>
+</section>
 
-                <div class="coming-soon-stay-connected">
-                    <h3>Stay in the Loop</h3>
-                    <p>Follow us on social media for the latest campaign updates:</p>
-                    <div class="social-buttons-large">
-                        <a href="https://facebook.com/vonovenforsenate" target="_blank" class="social-btn facebook">
-                            <span class="social-icon">📘</span>
-                            <span class="social-text">Facebook</span>
-                        </a>
-                        <a href="https://instagram.com/vonovenforsenate" target="_blank" class="social-btn instagram">
-                            <span class="social-icon">📷</span>
-                            <span class="social-text">Instagram</span>
-                    </div>
+<section class="news-section">
+    <div class="container">
+        <div class="news-card">
+            <div class="news-image">
+                <img src="cc_still_shot.png" alt="Mark von Oven at City Council">
+            </div>
+            <div class="news-details">
+                <div class="news-meta">
+                    <span class="news-source">Carver County Local News</span>
+                    <span class="news-date">February 10, 2026</span>
                 </div>
-
-                <div class="coming-soon-contact">
-                    <p>Have questions? <a href="contact.html">Contact us</a> or call <a href="tel:9524790506">(952) 479-0506</a></p>
-                </div>
+                <h2 class="news-title">Local Leaders and Residents Call on Chanhassen City Council to Take Action Regarding ICE</h2>
+                <p class="news-excerpt">Community members and local leaders urged the Chanhassen City Council to address federal immigration enforcement actions that took place in the city without coordination with local law enforcement.</p>
+                <a href="https://cclocalnews.org/2026/02/10/local-leaders-and-residents-call-on-chanhassen-city-council-to-take-action-regarding-ice/" target="_blank" class="btn btn-primary">Read Full Article</a>
             </div>
         </div>
-    </section>
+
+        <!-- Add more news cards here as coverage comes in -->
+        
+    </div>
+</section>
 
     <footer class="main-footer">
         <div class="container">
@@ -119,162 +115,6 @@
 
     <script src="script.js"></script>
 
-    <style>
-        /* Coming Soon Specific Styles */
-        .coming-soon-hero {
-            min-height: calc(100vh - 80px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 4rem 0;
-            background: linear-gradient(135deg, var(--off-white) 0%, var(--white) 100%);
-        }
-
-        .coming-soon-content {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .coming-soon-icon {
-            font-size: 5rem;
-            margin-bottom: 1.5rem;
-            animation: bounce 2s infinite;
-        }
-
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-        .coming-soon-content h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            color: var(--navy);
-            margin-bottom: 1rem;
-        }
-
-        .coming-soon-text {
-            font-size: 1.25rem;
-            color: var(--medium-gray);
-            margin-bottom: 2.5rem;
-        }
-
-        .coming-soon-actions {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 4rem;
-        }
-
-        .coming-soon-stay-connected {
-            background: var(--white);
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(26, 47, 75, 0.08);
-            margin-bottom: 2rem;
-        }
-
-        .coming-soon-stay-connected h3 {
-            color: var(--navy);
-            margin-bottom: 0.5rem;
-        }
-
-        .coming-soon-stay-connected > p {
-            color: var(--medium-gray);
-            margin-bottom: 2rem;
-        }
-
-        .social-buttons-large {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .social-btn {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 1rem 2rem;
-            background: var(--navy);
-            color: var(--white);
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all var(--transition-normal);
-            text-decoration: none;
-        }
-
-        .social-btn:hover {
-            background: var(--teal);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(32, 178, 170, 0.3);
-        }
-
-        .social-icon {
-            font-size: 1.5rem;
-        }
-
-        .social-text {
-            font-size: 1rem;
-        }
-
-        .coming-soon-contact {
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--light-gray);
-        }
-
-        .coming-soon-contact p {
-            color: var(--medium-gray);
-            margin: 0;
-        }
-
-        .coming-soon-contact a {
-            color: var(--teal);
-            font-weight: 600;
-        }
-
-        .coming-soon-contact a:hover {
-            color: var(--teal-dark);
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .coming-soon-hero {
-                padding: 2rem 0;
-            }
-
-            .coming-soon-icon {
-                font-size: 3.5rem;
-            }
-
-            .coming-soon-stay-connected {
-                padding: 2rem 1.5rem;
-            }
-
-            .social-buttons-large {
-                flex-direction: column;
-            }
-
-            .social-btn {
-                justify-content: center;
-                width: 100%;
-            }
-
-            .coming-soon-actions {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .coming-soon-actions .btn {
-                width: 100%;
-            }
-        }
-    </style>
+    <!-- Styles handled in main styles.css -->
 </body>
 </html>
