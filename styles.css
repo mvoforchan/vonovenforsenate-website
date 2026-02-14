@@ -2078,3 +2078,159 @@ section h2::after {
         border-radius: 8px;
     }
 }
+
+/* Events Page Styles */
+.events-section {
+    padding: var(--spacing-xl) 0;
+    background: var(--off-white);
+}
+
+.event-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(26, 47, 75, 0.1);
+    overflow: hidden;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 2rem;
+}
+
+.event-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.event-details {
+    padding: 2rem 2rem 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-title {
+    color: var(--navy);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.event-meta {
+    margin-bottom: 1.5rem;
+}
+
+.event-date,
+.event-location {
+    color: var(--dark-gray);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.event-meta strong {
+    color: var(--navy);
+}
+
+.event-description {
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+
+.event-description p {
+    color: var(--dark-gray);
+    line-height: 1.7;
+}
+
+.event-card .btn {
+    align-self: flex-start;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 968px) {
+    .event-card {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .event-image {
+        height: 250px;
+    }
+    
+    .event-details {
+        padding: 2rem;
+    }
+    
+    .event-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .event-image {
+        height: 200px;
+    }
+    
+    .event-details {
+        padding: 1.5rem;
+    }
+}
+
+/* Endorsements Page Styles */
+.endorsements-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.endorsement-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(26, 47, 75, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.endorsement-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.endorsement-logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.endorsement-content h3 {
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.endorsement-content p {
+    color: var(--dark-gray);
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .endorsement-card {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .endorsement-logo img {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}
