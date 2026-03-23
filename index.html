@@ -7,242 +7,224 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-D3HC15Z5RF');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mark von Oven for Minnesota Senate District 48</title>
+    <title>Thank You | Mark von Oven</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Spectral:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #1a2f4b;
+            --teal: #20b2aa;
+            --orange: #ff6b35;
+            --white: #ffffff;
+            --off-white: #f8f9fa;
+            --light-gray: #e9ecef;
+            --medium-gray: #6c757d;
+            --dark-gray: #343a40;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background: linear-gradient(135deg, var(--off-white) 0%, var(--white) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 4rem 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(26, 47, 75, 0.1);
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 400px;
+            margin: 0 auto 2rem auto;
+            display: block;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: var(--navy);
+            margin-bottom: 2rem;
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        .photo {
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 0 auto 2.5rem auto;
+            display: block;
+            box-shadow: 0 8px 30px rgba(26, 47, 75, 0.15);
+        }
+
+        .message {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--dark-gray);
+            margin-bottom: 2rem;
+        }
+
+        .message p {
+            margin-bottom: 1.5rem;
+        }
+
+        .signature {
+            font-family: 'Spectral', Georgia, serif;
+            font-size: 1.25rem;
+            font-style: italic;
+            color: var(--navy);
+            margin: 2.5rem 0;
+        }
+
+        .contact-info {
+            border-top: 2px solid var(--light-gray);
+            padding-top: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info h3 {
+            color: var(--navy);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            color: var(--medium-gray);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info a {
+            color: var(--teal);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info a:hover {
+            color: var(--orange);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+            list-style: none;
+        }
+
+        .social-links a {
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--teal);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 2.5rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .logo {
+                max-width: 300px;
+            }
+
+            .message {
+                font-size: 1rem;
+            }
+
+            .photo {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 2rem 1.25rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .social-links {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="MVO_logo_final.jpg" alt="Mark von Oven for State Senate District 48" class="logo-image">
-            </a>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="about.html">About</a></li>
-                <li><a href="issues.html">Issues</a></li>
-                <li><a href="get-involved.html">Get Involved</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="endorsements.html">Endorsements</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://secure.actblue.com/donate/mark-von-oven-1" class="nav-donate">Donate</a></li>
+    <div class="container">
+        <img src="MVO_logo_final.jpg" alt="Mark von Oven" class="logo">
+        
+        <h1>Thank You</h1>
+        
+        <img src="family_snowpic.jpg" alt="Mark von Oven and family" class="photo">
+        
+        <div class="message">
+            <p>On Saturday March 21st, the DFL delegates of Senate District 48 made their choice. While it wasn't the outcome we hoped for, I couldn't be more proud of what we built together.</p>
+            
+            <p>Thank you to everyone who believed in this campaign — the donors who made it possible, the volunteers who gave their time, the delegates who fought for fresh leadership, and my family who supported me every step of the way.</p>
+            
+            <p>I will continue to serve the residents of Chanhassen as your City Councilmember, doing the work you elected me to do.</p>
+            
+            <p>This campaign may have ended, but my commitment to this community and these principles hasn't changed one bit.</p>
+        </div>
+        
+        <div class="signature">
+            With gratitude,<br>
+            Mark von Oven
+        </div>
+        
+        <div class="contact-info">
+            <h3>Chanhassen City Council</h3>
+            <p><a href="mailto:mvonoven@chanhassenmn.gov">mvonoven@chanhassenmn.gov</a></p>
+            <p><a href="tel:9524790506">(952) 479-0506</a></p>
+            
+            <ul class="social-links">
+                <li><a href="https://facebook.com/vonovenforsenate" target="_blank">Facebook</a></li>
+                <li><a href="https://instagram.com/vonovenforsenate" target="_blank">Instagram</a></li>
+                <li><a href="https://linkedin.com/in/mark-von-oven" target="_blank">LinkedIn</a></li>
             </ul>
         </div>
-    </nav>
-
-    <section class="hero">
-        <div class="hero-background"></div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-headline">
-                    It's Time for Leadership<br>That Brings Us Together
-                </h1>
-                <div class="hero-intro">
-                    <p>I'm Mark von Oven, and I'm running for State Senate because District 48 deserves a leader who focuses on solving problems, not scoring political points.</p>
-                    <p>On Chanhassen City Council, I've proven I can bring people together to get results. Now I'm ready to bring that same common sense leadership to St. Paul.</p>
-                </div>
-                <div class="hero-cta">
-                    <a href="about.html" class="btn btn-primary">Learn More</a>
-                    <a href="https://secure.actblue.com/donate/mark-von-oven-1" class="btn btn-secondary">Donate</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="family-snowpic-logo.png" alt="Mark von Oven - Candidate for Minnesota State Senate District 48" class="hero-photo">
-            </div>
-        </div>
-    </section>
-
-    <section class="why-running">
-        <div class="container">
-            <h2>Why I'm Running</h2>
-            <div class="why-content">
-                <div class="why-text">
-                    <p class="lead">District 48 deserves a State Senator who brings people together to solve real problems, not someone who divides us for political gain. As a City Councilmember, I've proven I can find common ground, listen to all voices, and deliver results that make our communities stronger.</p>
-                    <p>Whether it's managing budgets responsibly, investing in our schools, or standing up for constitutional principles when it matters most, I'm committed to leadership that puts people before politics.</p>
-                    <p>Our community deserves a State Senator who will:</p>
-                    <ul class="checklist">
-                        <li>Keep government accountable and transparent</li>
-                        <li>Protect constitutional rights for everyone</li>
-                        <li>Make decisions based on data and common sense</li>
-                        <li>Put people before politics</li>
-                        <li>Deliver results that improve our daily lives</li>
-                    </ul>
-                </div>
-                <div class="why-quote">
-                    <blockquote>
-                        <p>"Leadership isn't about making the loudest noise. It's about bringing people together, finding common ground, and getting things done."</p>
-                        <cite>— Mark von Oven</cite>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="issues-preview">
-        <div class="container">
-            <h2>Priorities for District 48</h2>
-            <div class="issues-grid">
-                <a href="issues.html#affordability" class="issue-card">
-                    <div class="issue-icon">💰</div>
-                    <h3>Affordability & Fiscal Responsibility</h3>
-                    <p>Keep costs down for families while investing wisely in our community's future.</p>
-                    <span class="read-more">Read More →</span>
-                </a>
-                <a href="issues.html#education" class="issue-card">
-                    <div class="issue-icon">📚</div>
-                    <h3>Education</h3>
-                    <p>Fully fund our schools and support teachers who are shaping the next generation.</p>
-                    <span class="read-more">Read More →</span>
-                </a>
-                <a href="rights.html" class="issue-card">
-                    <div class="issue-icon">⚖️</div>
-                    <h3>Constitutional Rights & Transparency</h3>
-                    <p>Protect civil liberties and ensure government operates openly and accountably.</p>
-                    <span class="read-more">Read More →</span>
-                </a>
-                <a href="issues.html#environment" class="issue-card">
-                    <div class="issue-icon">💧</div>
-                    <h3>Environment & Water Quality</h3>
-                    <p>Preserve our lakes and natural spaces for future generations to enjoy.</p>
-                    <span class="read-more">Read More →</span>
-                </a>
-                <a href="issues.html#safety" class="issue-card">
-                    <div class="issue-icon">🛡️</div>
-                    <h3>Public Safety</h3>
-                    <p>Support law enforcement and first responders while investing in prevention.</p>
-                    <span class="read-more">Read More →</span>
-                </a>
-            </div>
-            <div class="view-all">
-                <a href="issues.html" class="btn btn-outline">View All Issues</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="results">
-        <div class="container">
-            <img src="mvo_CC_swearing_in.jpg" alt="Mark von Oven being sworn in to Chanhassen City Council with his family" class="section-photo">
-            <h2>Proven Results on City Council</h2>
-            <div class="results-grid">
-                <div class="result-item">
-                    <div class="result-number">7</div>
-                    <div class="result-text">
-                        <h4>Years of Leadership</h4>
-                        <p>Serving Chanhassen with integrity and bringing people together</p>
-                    </div>
-                </div>
-                <div class="result-item">
-                    <div class="result-achievement">🏛️</div>
-                    <div class="result-text">
-                        <h4>New City Hall & Civic Campus</h4>
-                        <p>Leading the development of modern facilities that serve our community</p>
-                    </div>
-                </div>
-                <div class="result-item">
-                    <div class="result-achievement">🏊</div>
-                    <div class="result-text">
-                        <h4>New Community Center</h4>
-                        <p>Bringing recreational opportunities and new gathering spaces to Chanhassen</p>
-                    </div>
-                </div>
-                <div class="result-item">
-                    <div class="result-achievement">📊</div>
-                    <div class="result-text">
-                        <h4>Fiscal Responsibility</h4>
-                        <p>Managing budgets responsibly while investing in community priorities</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="email-signup" style="display: none;"> <!--Remove style when ready to unhide Section-->
-        <div class="container">
-            <div class="signup-content">
-                <h2>Stay Connected</h2>
-                <p>Join our campaign and get updates on events, volunteer opportunities, and how you can help bring common sense leadership to St. Paul.</p>
-                <form class="signup-form" action="#" method="post">
-                    <div class="form-row">
-                        <input type="text" name="first_name" placeholder="First Name" required>
-                        <input type="text" name="last_name" placeholder="Last Name" required>
-                    </div>
-                    <div class="form-row">
-                        <input type="email" name="email" placeholder="Email Address" required>
-                        <input type="tel" name="phone" placeholder="Phone (optional)">
-                    </div>
-                    <div class="form-row">
-                        <input type="text" name="zip" placeholder="ZIP Code" required>
-                        <button type="submit" class="btn btn-primary">Join the Campaign</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <img src="MVO_logo_final.jpg" alt="Mark von Oven for State Senate District 48" class="footer-logo-image">
-                    </div>
-                    <p class="footer-tagline">Common Sense Leadership That Brings Us Together</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Campaign</h4>
-                        <ul>
-                            <li><a href="about.html">About Mark</a></li>
-                            <li><a href="issues.html">Issues</a></li>
-                            <li><a href="news.html">News</a></li>
-                            <li><a href="endorsements.html">Endorsements</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Get Involved</h4>
-                        <ul>
-                            <li><a href="get-involved.html">Volunteer</a></li>
-                            <li><a href="https://secure.actblue.com/donate/mark-von-oven-1">Donate</a></li>
-                            <li><a href="events.html">Events</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Connect</h4>
-                        <ul class="social-links">
-                            <li><a href="https://facebook.com/vonovenforsenate" target="_blank">Facebook</a></li>
-                            <li><a href="https://instagram.com/vonovenforsenate" target="_blank">Instagram</a></li>
-                        </ul>
-                        <div class="footer-contact">
-                            <p><a href="mailto:mark@vonovenforsenate.com">mark@vonovenforsenate.com</a></p>
-                            <p>(952) 479-0506</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="disclaimer">Paid for by Mark von Oven for Minnesota Senate, PO BOX 944, Chanhassen, MN 55317</p>
-                <p class="footer-copyright">&copy; 2026 Mark von Oven for Minnesota Senate. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+    </div>
 </body>
 </html>
